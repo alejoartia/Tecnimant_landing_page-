@@ -45,6 +45,14 @@ const Footer = () => {
                 {COMPANY_INFO.phone}
               </li>
               <li className="flex items-center">
+                <Phone className="mr-2" size={16} />
+                {COMPANY_INFO.phone2}
+              </li>
+              <li className="flex items-center">
+                <Phone className="mr-2" size={16} />
+                {COMPANY_INFO.phone3}
+              </li>
+              <li className="flex items-center">
                 <Mail className="mr-2" size={16} />
                 {COMPANY_INFO.email}
               </li>

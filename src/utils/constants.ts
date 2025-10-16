@@ -1,8 +1,10 @@
 export const COMPANY_INFO = {
   name: 'Tecnimant',
   tagline: 'Nos adelantamos a las fallas para que tu negocio nunca se detenga.',
-  phone: '+57 300 123 4567',
-  email: 'info@tecnimant.com',
+  phone: '+57 3183929374',
+  phone2: '+57 3202893697',
+  phone3: '+57 3213510873',
+  email: 'admin@tecnimant.co',
   cities: ['Bogotá', 'Villavicencio'],
 } as const;
 
