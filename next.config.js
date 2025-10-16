@@ -15,8 +15,6 @@ const nextConfig = {
       },
     ],
   },
-  // Disable telemetry
-  telemetry: false,
 }
 
 module.exports = nextConfig

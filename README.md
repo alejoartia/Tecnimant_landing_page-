@@ -42,15 +42,34 @@ gcloud run deploy --image gcr.io/PROJECT_ID/tecnimant-landing
 
 ## 🐳 Docker Development
 
+### Development (Recomendado)
 ```bash
-# Build image
-docker build -t tecnimant-landing .
+# Opción 1: Script automático
+./scripts/dev.sh
 
-# Run locally
-docker run -p 3000:3000 tecnimant-landing
+# Opción 2: Manual
+docker-compose -f docker-compose.dev.yml up --build
+```
 
-# Or with docker-compose
+### Production
+```bash
+# Opción 1: Script automático
+./scripts/prod.sh
+
+# Opción 2: Manual
 docker-compose up --build
+```
+
+### Comandos Útiles
+```bash
+# Ver logs
+docker-compose logs -f
+
+# Parar servicios
+docker-compose down
+
+# Limpiar todo
+docker-compose down -v --rmi all
 ```
 
 ## 🧹 Clean Project
