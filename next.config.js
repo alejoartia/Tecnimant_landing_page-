@@ -6,11 +6,17 @@ const nextConfig = {
       'storage.googleapis.com'
     ],
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'storage.googleapis.com',
+        port: '',
+        pathname: '/tecnimant_page_assets/**',
+      },
+    ],
   },
-  output: 'standalone', // Para Docker
-  experimental: {
-    outputFileTracingRoot: undefined,
-  },
+  // Disable telemetry
+  telemetry: false,
 }
 
 module.exports = nextConfig
